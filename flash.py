@@ -12,5 +12,5 @@ for port, desc, hwid in sorted(ports):
 		print("------------------------------")
 		print("Found ESP32-S2!")
 		print("Erasing and flashing board...")
-		os.system('gnome-terminal --working-directory ~ -e \"esptool.py --port {} --chip esp32s2 write_flash 0x0 v1.1rubber_nugget.bin\"'.format(port))
+		os.system('gnome-terminal --working-directory ~/Projects/Nugget/firmware/tools/Nugget-Flasher/ -e \"esptool.py --port {} --chip esp32s2 write_flash 0x0 v1.1-beta-USB-Nugget.bin\"'.format(port))
 		
